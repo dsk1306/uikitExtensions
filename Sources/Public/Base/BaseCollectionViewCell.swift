@@ -7,7 +7,9 @@ open class BaseCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Properties
 
-    private(set) var reusableCancellable = CombineCancellable()
+    public var reusableCancellable: CombineCancellable { reusableCancellableRelay }
+
+    private var reusableCancellableRelay = CombineCancellable()
 
     // MARK: - Initialization
 
@@ -25,10 +27,10 @@ open class BaseCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Base Class
 
-    public override func prepareForReuse() {
+    open override func prepareForReuse() {
         super.prepareForReuse()
 
-        reusableCancellable = CombineCancellable()
+        reusableCancellableRelay = CombineCancellable()
         reusableBind()
     }
 
