@@ -18,7 +18,6 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "CombineExtensions",
             url: "https://github.com/dsk1306/combineExtensions",
             .upToNextMajor(from: "1.0.0")
         )
@@ -26,7 +25,9 @@ let package = Package(
     targets: [
         .target(
             name: "UIKitExtensions",
-            dependencies: ["CombineExtensions"],
+            dependencies: [
+                .product(name: "CombineExtensions", package: "combineExtensions")
+            ],
             path: "Sources"
         ),
         .testTarget(
