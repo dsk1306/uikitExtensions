@@ -3,7 +3,7 @@ import CombineExtensions
 import UIKit
 
 /// Base class for all collection view cells.
-public class BaseCollectionViewCell: UICollectionViewCell {
+open class BaseCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Properties
 
@@ -19,7 +19,7 @@ public class BaseCollectionViewCell: UICollectionViewCell {
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -35,8 +35,8 @@ public class BaseCollectionViewCell: UICollectionViewCell {
     // MARK: - Public Methods
 
     /// Configures cell subviews.
-    func configureSubviews() {}
+    open func configureSubviews() {}
 
-    func reusableBind() {}
+    open func reusableBind() {}
 
 }
