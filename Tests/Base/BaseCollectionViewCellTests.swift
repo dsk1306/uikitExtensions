@@ -66,7 +66,7 @@ private extension BaseCollectionViewCellTests {
 
 }
 
-// MARK: - MockCollectionViewCell
+// MARK: - Mock Cell
 
 private extension BaseCollectionViewCellTests {
 
