@@ -18,7 +18,7 @@ final class BaseViewTests: XCTestCase {
 
     // MARK: - Tests
 
-    func test_configureSubviews() {
+    func test_init() {
         XCTAssertEqual(view.numberOfConfigureSubviewsCalls, 1)
     }
 

@@ -20,7 +20,7 @@ final class BaseCollectionViewCellTests: XCTestCase {
 
     // MARK: - Tests
 
-    func test_configureSubviews() {
+    func test_init() {
         XCTAssertEqual(cell.numberOfConfigureSubviewsCalls, 1)
         XCTAssertEqual(cell.numberOfReusableBindCalls, 1)
     }
