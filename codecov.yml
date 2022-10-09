@@ -4,7 +4,7 @@ coverage:
     project:
       default:
         target: auto
-        threshold: 5.0
+        threshold: 50.0
 
 ignore:
   - "Tests"
