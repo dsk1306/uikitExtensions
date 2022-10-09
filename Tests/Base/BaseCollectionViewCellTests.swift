@@ -15,7 +15,7 @@ final class BaseCollectionViewCellTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        cell = MockCollectionViewCell()
+        cell = .init()
     }
 
     // MARK: - Tests
